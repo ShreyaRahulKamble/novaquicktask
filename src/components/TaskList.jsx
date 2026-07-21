@@ -14,7 +14,7 @@ import TaskItem from './TaskItem';
  * @param {Function} props.onDeleteTask - Callback to delete a task
  * @returns {JSX.Element} Rendered task list or empty state message
  */
-export default function TaskList({ tasks, onToggleComplete, onDeleteTask }) {
+export default function TaskList({ tasks, onToggleTask, onDeleteTask }) {
   // Empty state when no tasks match current filter
   if (tasks.length === 0) {
     return (
