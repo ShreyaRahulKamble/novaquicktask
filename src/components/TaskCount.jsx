@@ -7,15 +7,13 @@ import React from 'react';
  * @param {Array} tasks - Array of all task objects
  * @returns {JSX.Element} Footer text with active task count
  */
-const TaskCount = ({ tasks }) => {
-  const activeCount = tasks.filter(task => !task.completed).length;
-
+const TaskCount = ({ remaining }) => {
   return (
     <div className="task-count">
       <p>
-        {activeCount === 0
+        {remaining === 0
           ? 'No tasks remaining'
-          : `${activeCount} ${activeCount === 1 ? 'task' : 'tasks'} remaining`}
+          : `${remaining} ${remaining === 1 ? 'task' : 'tasks'} remaining`}
       </p>
     </div>
   );
