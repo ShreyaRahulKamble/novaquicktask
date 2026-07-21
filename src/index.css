@@ -1,0 +1,15 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --primary-color: #6366F1;
+  --secondary-color: #8B5CF6;
+  --text-color: #1F2937;
+  --text-light: #FFFFFF;
+  --text-muted: #6B7280;
+  --bg-color: #FFFFFF;
+  --bg-secondary: #F9FAFB;
+  --border-color: #E5E7EB;
+  --heading-color: #111827;
+}
+
+body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg-color); color: var(--text-color); }
