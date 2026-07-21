@@ -1,7 +1,6 @@
 // src/components/FilterBar.jsx
 
 import React from 'react';
-import './FilterBar.css';
 
 const FilterBar = ({ activeFilter, onFilterChange }) => {
   const filters = [
