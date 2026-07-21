@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-const FilterBar = ({ activeFilter, onFilterChange }) => {
+const FilterBar = ({ currentFilter, onFilterChange }) => {
   const filters = [
     { label: 'All', value: 'all' },
     { label: 'Active', value: 'active' },
