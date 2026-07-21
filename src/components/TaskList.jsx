@@ -1,7 +1,6 @@
 // src/components/TaskList.jsx
 
 import TaskItem from './TaskItem';
-import './TaskList.css';
 
 /**
  * TaskList Component
