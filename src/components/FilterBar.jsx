@@ -1,5 +1,4 @@
 // src/components/FilterBar.jsx
-
 import React from 'react';
 
 const FilterBar = ({ currentFilter, onFilterChange }) => {
@@ -14,9 +13,9 @@ const FilterBar = ({ currentFilter, onFilterChange }) => {
       {filters.map((filter) => (
         <button
           key={filter.value}
-          className={`filter-btn ${activeFilter === filter.value ? 'active' : ''}`}
+          className={`filter-btn ${currentFilter === filter.value ? 'active' : ''}`}
           onClick={() => onFilterChange(filter.value)}
-          aria-pressed={activeFilter === filter.value}
+          aria-pressed={currentFilter === filter.value}
         >
           {filter.label}
         </button>
