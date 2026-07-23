@@ -11,5 +11,22 @@
   --border-color: #E5E7EB;
   --heading-color: #111827;
 }
+.task-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; background: var(--bg-secondary); border-radius: 8px; }
+.task-item__content { display: flex; align-items: center; gap: 12px; }
+.task-item__text--completed { text-decoration: line-through; color: var(--text-muted); }
+.task-item__delete { padding: 6px 12px; background: transparent; color: #EF4444; border: 1px solid #EF4444; border-radius: 6px; cursor: pointer; }
+.app-container { max-width: 600px; margin: 0 auto; padding: 40px 20px; }
+.app-header { text-align: center; margin-bottom: 32px; }
+.app-header h1 { color: var(--primary-color); font-size: 2rem; }
+.app-header p { color: var(--text-muted); }
+.task-input-container { display: flex; gap: 8px; margin-bottom: 20px; }
+.task-input { flex: 1; padding: 12px; border: 2px solid var(--border-color); border-radius: 8px; font-size: 1rem; }
+.task-input-button { padding: 12px 20px; background: var(--primary-color); color: var(--text-light); border: none; border-radius: 8px; cursor: pointer; font-weight: 600; }
+.filter-bar { display: flex; gap: 8px; margin-bottom: 20px; }
+.filter-btn { padding: 8px 16px; border: 2px solid var(--border-color); background: var(--bg-color); border-radius: 6px; cursor: pointer; }
+.filter-btn.active { background: var(--primary-color); color: var(--text-light); border-color: var(--primary-color); }
+.task-list { display: flex; flex-direction: column; gap: 8px; }
+.task-count { margin-top: 16px; color: var(--text-muted); font-size: 0.9rem; }
+.empty-state { text-align: center; color: var(--text-muted); padding: 20px; }
 
 body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg-color); color: var(--text-color); }
